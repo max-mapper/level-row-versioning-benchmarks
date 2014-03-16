@@ -1,0 +1,15 @@
+{
+  "name": "level-row-versioning-benchmarks",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "level": "^0.18.0",
+    "rimraf": "^2.2.6"
+  }
+}
