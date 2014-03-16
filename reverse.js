@@ -28,8 +28,7 @@ setup(function(db, settings, done) {
       currentId--
       var opts = {
         end: '',
-        start: 'ÿ' + lexint.pack(row.id, 'hex'),
-        // end: 'ÿ' + raw[1],
+        start: 'ÿ' + raw[1],
         limit: 1,
         reverse: true
       }
