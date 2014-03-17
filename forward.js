@@ -4,10 +4,9 @@ var buff = require('fs').readFileSync('package.json')
 
 setup(fill, function(db, settings, done) {
   var startOpts = {
-    start: 'ÿÿ',
-    end: '',
-    limit: 1,
-    reverse: true
+    start: '',
+    end: 'ÿÿ',
+    limit: 1
   }
   
   var currentId = settings.ids
@@ -28,10 +27,9 @@ setup(fill, function(db, settings, done) {
     // } else {
       currentId--
       var opts = {
-        end: '',
-        start: 'ÿ' + raw[1],
-        limit: 1,
-        reverse: true
+        start: 'ÿ' + raw[1] + 'ÿÿ',
+        end: 'ÿÿ',
+        limit: 1
       }
       getOne(opts, function(row, raw) {
         proceed(row, raw)

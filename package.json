@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "bench": "node forward.js && node reverse.js && node secondary.js"
   },
-  "author": "",
+  "author": "max ogden",
   "license": "ISC",
   "dependencies": {
     "level": "^0.18.0",
