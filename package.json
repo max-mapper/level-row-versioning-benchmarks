@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "level": "^0.18.0",
-    "rimraf": "^2.2.6"
+    "rimraf": "^2.2.6",
+    "lexicographic-integer": "^1.1.0"
   }
 }
