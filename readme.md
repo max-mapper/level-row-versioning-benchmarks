@@ -50,9 +50,9 @@ number of keys required is: `versions * number of ids`
 ### secondary.js
 
 - uses two indexes, `d` which is data at each id + version and `c` which is a pointer to the current version for an id
-- stores data in format `ÿdÿIDÿVERSION` and `ÿsÿID = VERSION`
+- stores data in format `ÿdÿIDÿVERSION` and `ÿcÿID = VERSION`
 - algorithm:
-  - does a read stream of all `ÿsÿ` keys
+  - does a read stream of all `ÿcÿ` keys
   - latest revision is stored in value, combine that with key to get key of latest rev
   - do db.get(latestKey) to get the current version
   
